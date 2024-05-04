@@ -25,7 +25,7 @@ const App = () => {
   };
 
   const countPositiveFeedbackPercentage = () => {
-    const { good, neutral, bad } = feedback;
+    const { good } = feedback;
     const total = countTotalFeedback();
     const positiveFeedbackPercentage = (good / total) * 100;
     return Math.round(positiveFeedbackPercentage);
